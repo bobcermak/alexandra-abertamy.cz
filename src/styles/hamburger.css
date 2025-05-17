@@ -1,0 +1,49 @@
+/*Hamburger*/
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    height: 2rem;
+    gap: .4rem;
+    cursor: pointer;
+}
+
+.line {
+    left: 0;
+    right: 0;
+    height: .35rem;
+    border-radius: 2rem;
+    background-color: var(--accent, #3B1900);
+}
+
+@media screen and (min-width: 961px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+/*Close*/
+
+.close {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    gap: .4rem;
+    cursor: pointer;
+}
+
+.line--close {
+    position: absolute;
+}
+
+.close .line--close:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.close .line--close:nth-child(2) {
+    transform: rotate(-45deg);
+}
