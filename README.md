@@ -1,4 +1,9 @@
 # Alexandra Abertamy | Přátelské místo s vybavením až pro 15 hostů v obci Hřebečná
+
+![alexandra-abertamy-mockup](/public/images/original/alexandra-abertamy-mockup.png)
+
+---
+
 [Náhled webu](https://bobcermak.github.io/alexandra-abertamy/)
 
 ## Licence
