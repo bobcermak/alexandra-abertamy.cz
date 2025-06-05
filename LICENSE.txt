@@ -5,6 +5,4 @@ Klient má neomezená práva k jeho použití, modifikaci a distribuci, včetně
 
 Bez výslovného písemného souhlasu klienta není dovoleno tento software dále šířit, kopírovat nebo používat třetími stranami.  
 
-Autor (vývojář) si vyhrazuje právo tento kód znovu použít pro jiný projekt nebo pro jiné účely, s výjimkou přímo konkurenčních projektů, pokud to nebude v rozporu s podmínkami dohody s klientem.  
-
 Autor nenese žádnou odpovědnost za případné škody vzniklé použitím tohoto software.
