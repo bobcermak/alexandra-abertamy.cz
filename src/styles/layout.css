@@ -65,8 +65,33 @@
 }
 
 .contact-container__socials-list-item {
-    display: inline-block;
+    display: flex;
     margin-top: .5rem;
+}
+
+.contact-container__socials-list-item--facebook {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .5rem;
+    fill: var(--white, #FFFFFF);
+    transition: fill var(--transition, .25s ease-in-out);
+}
+
+.contact-container__socials-list-item--facebook:hover {
+    fill: var(--secondary, #A3B18A);
+}
+
+.contact-container__socials-list-item--instagram {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .5rem;
+    fill: none;
+    stroke: var(--white, #FFFFFF);
+    transition: stroke var(--transition, .25s ease-in-out);
+}
+
+.contact-container__socials-list-item--instagram:hover {
+    stroke: var(--secondary, #A3B18A);
 }
 
 .contact-container__socials-list-item-hidden-content {

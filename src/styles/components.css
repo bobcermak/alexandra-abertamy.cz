@@ -1,5 +1,9 @@
 /*Icons*/
 
+.icon {
+  display: inline-block;
+}
+
 .icon::before {
   font-weight: 700;
   margin-right: .5rem;
