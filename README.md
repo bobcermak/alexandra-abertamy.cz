@@ -4,7 +4,7 @@
 
 ---
 
-[Náhled webu](https://bobcermak.github.io/alexandra-abertamy/)
+[Náhled webu](https://bobcermak.github.io/alexandra-abertamy.cz/)
 
 ## Licence
 Tento projekt je chráněn omezenou licencí. Kód smí být použit pouze pro referenční účely a nesmí být kopírován, modifikován nebo distribuován bez výslovného písemného souhlasu autora, pokud není uvedeno jinak v dohodě s klientem.
