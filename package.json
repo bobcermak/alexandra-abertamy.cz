@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build --base=/alexandra-abertamy/ && gh-pages -d dist -o origin"
+    "deploy": "vite build --base=/alexandra-abertamy.cz/ && gh-pages -d dist -o origin"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
