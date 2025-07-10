@@ -693,41 +693,43 @@
             </div>
         </section>
         <section class="page__contact" id="contact">
-            <header class="page__contact-header">
-                <div class="page__contact-header-intro">
-                    <h2 class="underline sections-title">Rezervace</h2>
-                    <p class="paragraph"><b>Máte zájem o ubytování?</b> <strong>Rezervaci si můžete snadno zajistit přímo přes náš online formulář.</strong> Stačí vyplnit své údaje a my se vám co nejdříve ozveme. Pokud máte jakékoliv dotazy nebo byste preferovali osobní kontakt, neváhejte nám zavolat na číslo <b>602 726 090</b> nebo nám napište email. <strong>Těšíme se na vaši zprávu!</strong></p>
+            <div class="page__contact-wrapper">
+                <header class="page__contact-header">
+                    <div class="page__contact-header-intro">
+                        <h2 class="underline sections-title">Rezervace</h2>
+                        <p class="paragraph"><b>Máte zájem o ubytování?</b> <strong>Rezervaci si můžete snadno zajistit přímo přes náš online formulář.</strong> Stačí vyplnit své údaje a my se vám co nejdříve ozveme. Pokud máte jakékoliv dotazy nebo byste preferovali osobní kontakt, neváhejte nám zavolat na číslo <b>602 726 090</b> nebo nám napište email. <strong>Těšíme se na vaši zprávu!</strong></p>
+                    </div>
+                </header>
+                <div class="page__contact-info">
+                    <address class="page__contact-info-address">
+                        <p class="page__contact-info-address-text"><strong class="page__contact-info-address-strong"><a class="page__contact-info-address-href" href="https://maps.app.goo.gl/bk3HDN1H4JcSoEHa8">Pohraničníků 44/198, Abertamy - Hřebečná</a></strong></p>
+                        <p class="page__contact-info-address-text"><strong class="page__contact-info-address-strong"><a class="page__contact-info-address-href" href="tel:+420602726090">+420 602 726 090</a> | <a class="page__contact-info-address-href" href="mailto:chataalexandra@centrum.cz">chataalexandra@centrum.cz</a></strong></p>
+                    </address>
                 </div>
-            </header>
-            <div class="page__contact-info">
-                <address class="page__contact-info-address">
-                    <p class="page__contact-info-address-text"><strong class="page__contact-info-address-strong"><a class="page__contact-info-address-href" href="https://maps.app.goo.gl/bk3HDN1H4JcSoEHa8">Pohraničníků 44/198, Abertamy - Hřebečná</a></strong></p>
-                    <p class="page__contact-info-address-text"><strong class="page__contact-info-address-strong"><a class="page__contact-info-address-href" href="tel:+420602726090">+420 602 726 090</a> | <a class="page__contact-info-address-href" href="mailto:chataalexandra@centrum.cz">chataalexandra@centrum.cz</a></strong></p>
-                </address>
-            </div>
-            <div class="page__contact-form form">
-                <h3 class="form__title">Objednat pobyt?</h3>
-                <form class="form__container" action="https://formspree.io/f/mjkkzenz" method="POST" autocomplete="on" target="_blank">
-                    <div class="form__name">
-                        <div class="form__name-first form__input-container">
-                            <label class="form__input-container-label" for="first-name"><b>Jméno</b></label>
-                            <input class="form__input" type="text" id="first-name" name="Jméno" placeholder="Jana" required>
+                <div class="page__contact-form form">
+                    <h3 class="form__title">Snadná rezervace</h3>
+                    <form class="form__container" action="https://formspree.io/f/mjkkzenz" method="POST" autocomplete="on" target="_blank">
+                        <div class="form__name">
+                            <div class="form__name-first form__input-container">
+                                <label class="form__input-container-label" for="first-name"><b>Jméno</b></label>
+                                <input class="form__input" type="text" id="first-name" name="Jméno" placeholder="Jana" required>
+                            </div>
+                            <div class="form__name-last form__input-container">
+                                <label class="form__input-container-label" for="last-name"><b>Přijmení</b></label>
+                                <input class="form__input" type="text" id="last-name" name="Přijmení" placeholder="Nováková" required>
+                            </div>
                         </div>
-                        <div class="form__name-last form__input-container">
-                            <label class="form__input-container-label" for="last-name"><b>Přijmení</b></label>
-                            <input class="form__input" type="text" id="last-name" name="Přijmení" placeholder="Nováková" required>
+                        <div class="form__email form__input-container">
+                            <label class="form__input-container-label" for="email"><b>Email</b></label>
+                            <input class="form__input" type="email" id="email" name="E-mail" placeholder="ex@domain.com" required>
                         </div>
-                    </div>
-                    <div class="form__email form__input-container">
-                        <label class="form__input-container-label" for="email"><b>Email</b></label>
-                        <input class="form__input" type="email" id="email" name="E-mail" placeholder="ex@domain.com" required>
-                    </div>
-                    <div class="form__container-textarea form__input-container">
-                        <label class="form__input-container-label form__input-container-label--textarea" for="message"><b>Zpráva</b></label>
-                        <textarea class="form__textarea" id="message" name="Zpráva" placeholder="Rádi bychom si u Vás rezervovali ubytování v termínu od 12. do 14. srpna pro 5 osob. Prosíme o informaci, zda je v tomto období volná kapacita, a případně o další podrobnosti k rezervaci. Děkujeme." required></textarea>
-                    </div>
-                    <button class="form__button button button--gray button-icon button-icon--arrow-right" type="submit" aria-label="Tlačítko odeslat">Odeslat</button>
-                </form>
+                        <div class="form__container-textarea form__input-container">
+                            <label class="form__input-container-label form__input-container-label--textarea" for="message"><b>Zpráva</b></label>
+                            <textarea class="form__textarea" id="message" name="Zpráva" placeholder="Rádi bychom si u Vás rezervovali ubytování v termínu od 12. do 14. srpna pro 5 osob. Prosíme o informaci, zda je v tomto období volná kapacita, a případně o další podrobnosti k rezervaci. Děkujeme." required></textarea>
+                        </div>
+                        <button class="form__button button button--gray button-icon button-icon--arrow-right" type="submit" aria-label="Tlačítko odeslat">Odeslat</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

@@ -1443,13 +1443,17 @@
 /*section - page__contact*/
 
 .page__contact {
+    background-color: var(--background-secondary, #F9E8E8);
+    padding: 2.5rem 0;
+    margin-top: 2.5rem;
+}
+
+.page__contact-wrapper {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 2.5rem;
-    max-width: 60vw;
-    max-width: 60svw;
-    margin: 1.5rem var(--margin-sides, 1.5rem);
+    margin: 2.5rem var(--margin-sides, 1.5rem);
 }
 
 .page__contact-header-content {
@@ -1463,8 +1467,10 @@
 }
 
 @media screen and (min-width: 1281px) {
-    .page__contact {
+    .page__contact-wrapper {
         margin: 1.5rem auto;
+        max-width: 60vw;
+        max-width: 60svw;
     }
 
     .page__contact-header-intro, .page__contact-header-content, .page__contact-info-address {
