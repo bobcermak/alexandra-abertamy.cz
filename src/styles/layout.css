@@ -1633,7 +1633,6 @@
 .page__copyright-href {
     text-decoration: none;
     color: var(--primary, #512100);
-    font-weight: 700;
     transition: color var(--transition, .25s ease-in-out);
 }
 
