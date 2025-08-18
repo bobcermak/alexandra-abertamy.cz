@@ -1,52 +1,15 @@
-//language
-
-//
-
 //header
 
-//roll
-
-document.addEventListener('DOMContentLoaded', function() {
-    let lastScrollY = window.scrollY;
-    const header = document.querySelector('.page__header');
-    window.addEventListener('scroll', function() {
-        if (window.scrollY < lastScrollY) {
-            header.classList.remove('page__header-hidden');
-        } else {
-            header.classList.add('page__header-hidden');
-        }
-        lastScrollY = window.scrollY;
-    });
-});
-
-//side-bar
-
-function toggleMenu() {
-    const menu = document.querySelector('.navbar__hamburger-menu');
-    const menuContent = document.querySelector('.menu-wrapper');
-    const darkContent = document.querySelector('.exit-wrapper');
-    if (menu.classList.contains('visible')) {
-        menu.classList.add('closing');
-        menuContent.classList.add('closing');
-        darkContent.classList.add('closing');
-        setTimeout(() => {
-            menu.classList.remove('visible', 'closing');
-            menuContent.classList.remove('visible', 'closing');
-            darkContent.classList.remove('visible', 'closing');
-        }, 300);
-    } else {
-        menu.classList.add('visible');
-        menuContent.classList.add('visible');
-        darkContent.classList.add('visible');
+document.addEventListener("DOMContentLoaded", () => {
+    let hamelmnts = document.querySelectorAll(".hamburger-zone");
+    for (const btn of document.querySelectorAll(".hamburger-btn")) {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            for (const element of hamelmnts) {
+                element.classList.toggle("active");
+            }  
+        });
     }
-}
-
-document.querySelectorAll('.menu-wrapper a').forEach(link => {
-    link.addEventListener('click', () => {
-        if (document.querySelector('.navbar__hamburger-menu').classList.contains('visible')) {
-            toggleMenu();
-        }
-    });
 });
 
 //main
