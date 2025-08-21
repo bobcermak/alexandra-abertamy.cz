@@ -140,11 +140,14 @@
 
 .navbar-menu {
     position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     display: grid;
     justify-items: center;
     align-content: end;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(11, minmax(auto, 35px));
     list-style: none;
     gap: 1.5rem;
 }
@@ -191,21 +194,20 @@
 .navbar-menu-item-href {
     text-decoration: none;
     font-size: 1.5rem;
-    color: var(--primary, #512100);
+    color: var(--black, #010B13);
     text-transform: uppercase;
     font-weight: 700;
     padding: 1rem;
 }
 
+.navbar-menu-item-href-primary-color {
+    color: var(--primary, #512100);
+}
+
 @media screen and (min-width: 961px) {
     .navbar-menu-item-href {
-        color: var(--black, #010B13);
         font-size: 1rem;
         padding: 0;
-    }
-
-    .navbar-menu-item-href-primary {
-        color: var(--primary, #512100);
     }
 
     .navbar-menu-item-reservation {
@@ -229,30 +231,11 @@
     font-size: 1.25rem;
     text-decoration: underline;
     text-underline-offset: 3px;
-    text-decoration-color: rgba(81, 33, 0, 0.75);
-}
-
-.navbar-menu-item-location {
-    grid-row: 7;
-    margin-bottom: 3.5rem;
-}
-
-@media screen and (min-width: 411px) {
-    .navbar-menu-item-location {
-        margin-bottom: 0;
-    }
+    text-decoration-color: rgba(1, 11, 19, 0.75);
 }
 
 .navbar-menu-item-location::first-letter {
     text-transform: uppercase;
-}
-
-.navbar-menu-item-email {
-    grid-row: 8;
-}
-
-.navbar-menu-item-phone {
-    grid-row: 9;
 }
 
 .navbar-menu-item-facebook {
