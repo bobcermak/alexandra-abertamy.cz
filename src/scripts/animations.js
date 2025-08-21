@@ -11,18 +11,41 @@ ScrollSmoother.create({
 });
 
 //ScrollToPlugin
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    const targetId = this.getAttribute('href');
-    if (targetId.length > 1 && document.querySelector(targetId)) {
-      e.preventDefault();
+document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const href = this.getAttribute('href');
+    const url = new URL(href, window.location.origin);
+    const hash = url.hash;
+    const page = url.pathname.split('/').pop() || 'index.html';
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    if (hash && page === currentPage) {
+      const targetEl = document.querySelector(hash);
+      if (targetEl) {
+        gsap.to(window, {
+          scrollTo: hash,
+          ease: "power2.inOut"
+        });
+      }
+    } else {
+      if (hash) sessionStorage.setItem('scrollToHash', hash);
+      window.location.href = url.pathname;
+    }
+  });
+});
+window.addEventListener('load', () => {
+  const hash = sessionStorage.getItem('scrollToHash') || window.location.hash;
+  if (hash) {
+    sessionStorage.removeItem('scrollToHash');
+    const targetEl = document.querySelector(hash);
+    if (targetEl) {
+      window.scrollTo(0, 0);
       gsap.to(window, {
-        duration: 0.15,
-        scrollTo: targetId,
+        scrollTo: hash,
         ease: "power2.inOut"
       });
     }
-  });
+  }
 });
 
 //page__welcome - animation
