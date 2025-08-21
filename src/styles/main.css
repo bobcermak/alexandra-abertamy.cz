@@ -22,12 +22,16 @@
         --transition: .25s ease-in-out;
         --max-width: 100vw;
         --max-width: 100svw;
+        --smaller-width: 100vw;
+        --smaller-width: 100svw;
     }
 
     @media screen and (min-width: 961px) {
         :root {
             --max-width: 92.5vw;
             --max-width: 92.5svw;
+            --smaller-width: 80vw;
+            --smaller-width: 80svw;
         }
     }
 
