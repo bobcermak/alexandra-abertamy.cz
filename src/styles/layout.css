@@ -1700,13 +1700,6 @@
     width: 80%;
 }
 
-a {
-    -webkit-text-decoration: none;
-    -webkit-appearance: none;
-    appearance: none;
-    color: var(--black, #000000);
-}
-
 /*section - page__up-link*/
 
 .page__up-link {
