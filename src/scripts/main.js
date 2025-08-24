@@ -62,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     let autoSlide = true;
     const delay = 12000;
+    let startX = null;
+    let isDragging = false;
     function changeSlide() {
         slides.forEach(slide => {
             slide.classList.remove('active', 'animate-slide');
@@ -83,85 +85,57 @@ document.addEventListener('DOMContentLoaded', function() {
             changeSlide();
         });
     });
-    let interval = setInterval(autoAdvance, delay);
-    changeSlide();
-});
-
-//animations
-document.addEventListener("DOMContentLoaded", () => {
-    const applyAnimations = (animations) => {
-      animations.forEach(({ element, delay }) => {
-        setTimeout(() => {
-          if (element) element.classList.add("animate");
-        }, delay);
-      });
-    };
-    const animationOffers = [
-      { element: document.querySelector(".container--ad"), delay: 400 },
-      { element: document.querySelector(".cards__1"), delay: 700 },
-      { element: document.querySelector(".cards__2"), delay: 900 },
-      { element: document.querySelector(".cards__3"), delay: 1100 },
-    ];
-    const animationLocation = [
-      { element: document.querySelector(".container--ad--another-pages"), delay: 400 },
-      { element: document.querySelector(".page__iframe"), delay: 700 },
-    ];
-    applyAnimations([...animationOffers, ...animationLocation]);
-});  
-document.addEventListener("DOMContentLoaded", function () {
-    const animateElements = (elements) => {
-        elements.forEach(({ element, delay }) => {
-            if (element) {
-                setTimeout(() => {
-                    element.classList.add("animate");
-                }, delay);
+    const sliderArea = slides[0]?.parentElement;
+    if (sliderArea) {
+        sliderArea.addEventListener('touchstart', function(e) {
+            if (e.touches.length === 1) {
+                startX = e.touches[0].clientX;
             }
         });
-    };
-    const getThreshold = () => {
-        const width = window.innerWidth;
-        if (width <= 480) return .05;
-        else if (width <= 768) return .15;
-        else return .35;
-    };
-    const createObserver = (sectionSelector, animationData) => {
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    animateElements(animationData);
-                    observer.unobserve(entry.target);
+        sliderArea.addEventListener('touchend', function(e) {
+            if (startX !== null && e.changedTouches.length === 1) {
+                let endX = e.changedTouches[0].clientX;
+                let diff = endX - startX;
+                if (Math.abs(diff) > 40) {
+                    autoSlide = false;
+                    if (diff < 0) {
+                        currentIndex = (currentIndex + 1) % slides.length;
+                    } else {
+                        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                    }
+                    changeSlide();
                 }
-            });
-        }, { threshold: getThreshold() });
-        const section = document.querySelector(sectionSelector);
-        if (section) {
-            observer.observe(section);
-        }
-    };
-    const aboutAnimationData = [
-        { element: document.querySelector(".header-about"), delay: 200 },
-        { element: document.querySelector(".container--about"), delay: 400 },
-        { element: document.querySelector(".footer-about"), delay: 600 },
-    ];
-    createObserver(".page__about", aboutAnimationData);
-    const skillsAnimationData = [
-        { element: document.querySelector(".container--skills-header-main"), delay: 200 },
-        { element: document.querySelector(".footer-skills__c-1"), delay: 400 },
-        { element: document.querySelector(".footer-skills__c-2"), delay: 600 },
-        { element: document.querySelector(".footer-skills__c-3"), delay: 800 },
-        { element: document.querySelector(".footer-skills__c-4"), delay: 1000 },
-        { element: document.querySelector(".footer-skills__c-5"), delay: 1200 },
-        { element: document.querySelector(".footer-skills__c-6"), delay: 1400 },
-    ];
-    createObserver(".page__skills", skillsAnimationData);
-    const reviewsAnimationData = [
-        { element: document.querySelector(".header-reviews"), delay: 200 },
-        { element: document.querySelector(".container--reviews"), delay: 400 },
-        { element: document.querySelector(".footer-reviews__c-1"), delay: 600 },
-        { element: document.querySelector(".footer-reviews__c-2"), delay: 800 },
-        { element: document.querySelector(".footer-reviews__c-3"), delay: 1000 },
-    ];
-    createObserver(".page__reviews", reviewsAnimationData);
+            }
+            startX = null;
+        });
+        sliderArea.addEventListener('mousedown', function(e) {
+            isDragging = true;
+            startX = e.clientX;
+        });
+        sliderArea.addEventListener('mouseup', function(e) {
+            if (isDragging && startX !== null) {
+                let endX = e.clientX;
+                let diff = endX - startX;
+                if (Math.abs(diff) > 40) {
+                    autoSlide = false;
+                    if (diff < 0) {
+                        currentIndex = (currentIndex + 1) % slides.length;
+                    } else {
+                        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                    }
+                    changeSlide();
+                }
+            }
+            isDragging = false;
+            startX = null;
+        });
+        sliderArea.addEventListener('mouseleave', function() {
+            isDragging = false;
+            startX = null;
+        });
+    }
+    let interval = setInterval(autoAdvance, delay);
+    changeSlide();
 });
 
 //p

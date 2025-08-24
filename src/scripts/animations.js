@@ -13,9 +13,9 @@ ScrollSmoother.create({
 //ScrollToPlugin
 document.querySelectorAll('a[href*="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    if (this.classList.contains('button--up-link')) return;
-    e.preventDefault();
     const href = this.getAttribute('href');
+    if (href === '#') return;
+    e.preventDefault();
     const url = new URL(href, window.location.origin);
     const hash = url.hash;
     const page = url.pathname.split('/').pop() || 'index.html';

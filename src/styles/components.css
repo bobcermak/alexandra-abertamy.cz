@@ -538,7 +538,7 @@
 /*form - page__contact*/
 
 .form {
-    border-radius: var(--border-radius, 3.25rem);
+    border-radius: 1.5rem;
     box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.25);
     text-align: center;
     padding: 1.5rem;
@@ -547,6 +547,12 @@
 @media screen and (min-width: 361px) {
     .form {
         padding: var(--gap-section, 2.5rem);
+    }
+}
+
+@media screen and (min-width: 961px) {
+    .form {
+        border-radius: 3.25rem;
     }
 }
 
