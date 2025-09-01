@@ -453,6 +453,11 @@
     }
 }
 
+.welcome-wrapper__content-year {
+    color: var(--secondary, #A3B18A);
+    font-weight: 700;
+}
+
 @media screen and (min-width: 1281px) {
     .welcome-wrapper__title {
         font-size: 1.5rem;
@@ -1054,13 +1059,10 @@
     }
 }
 
-.price-list-wrapper__heading-colon {
-    display: none;
-}
-
-.price-list-wrapper__heading-red {
+.price-list-wrapper__heading-green {
     display: block;
-    color: var(--red, #FF0004);
+    color: var(--secondary, #A3B18A);
+    font-weight: 700;
 }
 
 .price-list-wrapper__tables-container {
@@ -1455,6 +1457,11 @@
     }
 }
 
+.page__contact-header-intro-text-green {
+    color: var(--secondary, #A3B18A);
+    font-weight: 700;
+}
+
 @media screen and (min-width: 441px) {
     .page__contact-info-address-text {
         line-height: 0;
@@ -1641,32 +1648,13 @@
     }
 }
 
-.page__rights-container-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
-}
-
-@media screen and (min-width: 1281px) {
-    .page__rights-container-list {
-        flex-direction: row;
-        gap: 2.5rem;
-    }
-}
-
-.page__rights-container-list-item {
-    list-style: none;
-}
-
-.page__rights-container-list-item-href {
+.page__rights-container-href {
     text-decoration: none;
     color: var(--primary, #512100);
     transition: color var(--transition, .25s ease-in-out);
 }
 
-.page__rights-container-list-item-href:hover {
+.page__rights-container-href:hover {
     color: var(--dark-pink, #FFB6B6);
 }
 
