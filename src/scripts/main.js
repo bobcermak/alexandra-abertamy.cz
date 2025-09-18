@@ -1,6 +1,6 @@
 import './fontawesome.js'
 import './animations.js'
-import './tracking.js'
+//import './tracking.js'
 
 //header
 document.addEventListener("DOMContentLoaded", () => {
