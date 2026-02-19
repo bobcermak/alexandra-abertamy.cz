@@ -1,6 +1,7 @@
 @layer reset, init, content, components, hamburger;
 @import url(https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap) layer(reset);
 @import url(https://fonts.googleapis.com/css2?family=K2D:wght@300;400;700&display=swap) layer(reset);
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Outfit:wght@700&display=swap') layer(reset);
 @import url(normalize.css) layer(reset);
 @import url(layout.css) layer(content);
 @import url(components.css) layer(components);
