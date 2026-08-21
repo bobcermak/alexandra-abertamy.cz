@@ -1,0 +1,99 @@
+# Chata Alexandra — ubytování Hřebečná / Abertamy (Krušné hory)
+
+> Celoroční horské ubytování v obci Hřebečná (část Abertam) v Karlovarském kraji,
+> Česká republika. Kapacita 8–15 osob v pěti pokojích s vlastním sociálním
+> zařízením, TV/satelitem a bezplatnou Wi‑Fi. Chata je v provozu od roku 1927.
+> K dispozici je sauna, společenská místnost, ohniště, zahradní nábytek a okolí
+> vhodné pro cykloturistiku, turistiku a naučné stezky Krušnohoří.
+
+Tento soubor je strojově čitelné shrnutí obsahu webu <https://alexandra-abertamy.cz>
+pro jazykové modely, agenty a další automatizované zpracování. Web je statický,
+plně v češtině, bez přihlašování a bez placeného obsahu. Obsah je veřejný a lze
+jej citovat s uvedením zdroje. Rezervace se vyřizují individuálně e‑mailem,
+telefonicky nebo přes formulář na webu — web neobsahuje online rezervační systém
+ani platební bránu.
+
+Poslední aktualizace: 2026-08-21
+
+## Kontakt a identifikace
+
+- Název ubytování: Chata Alexandra (na webu též „Alexandra Abertamy“)
+- Adresa ubytování: Pohraničníků 44/198, 362 35 Abertamy – Hřebečná, Česká republika
+- GPS: 50.3773725 N, 12.8272805 E
+- Telefon: +420 602 726 090
+- E‑mail: chataalexandra@centrum.cz
+- Web: <https://alexandra-abertamy.cz>
+- Facebook: <https://www.facebook.com/share/15izFVYbRi/>
+- Provozovatel: Zdeněk Svěžen, IČO 15705404, sídlo č. ev. 185, 281 67 Stříbrná Skalice
+  (fyzická osoba podnikající, zapsaná v živnostenském rejstříku)
+
+## Stránky
+
+- [Domů](https://alexandra-abertamy.cz/): hlavní stránka — představení chaty, pokoje, vybavení, kompletní ceník, recenze hostů, tipy na výlety v okolí a rezervační formulář.
+- [Obchodní podmínky](https://alexandra-abertamy.cz/terms-and-conditions.html): pravidla rezervace, ceny a platby, průběh pobytu, zrušení rezervace, reklamace, mimosoudní řešení sporů.
+- [Zásady ochrany osobních údajů](https://alexandra-abertamy.cz/privacy-policy.html): jaké údaje z formuláře zpracováváme, proč, jak dlouho a jaká máte práva podle GDPR.
+- [Cookies](https://alexandra-abertamy.cz/cookies.html): web nepoužívá vlastní cookies ani analytiku; přehled obsahu třetích stran (mapa, písma, odeslání formuláře).
+
+## Ubytování a pokoje
+
+Celkem 5 pokojů, kapacita 8–15 osob. Všechny pokoje mají vlastní sociální
+zařízení, TV se satelitem a bezplatné Wi‑Fi připojení.
+
+- Dvoulůžkový pokoj
+- Třílůžkový pokoj
+- Čtyřlůžkový pokoj
+
+Společné prostory a vybavení: společenská místnost, sauna, kuchyně, zahrada se
+zahradním nábytkem, ohniště a gril, prostor pro úschovu kol a lyží.
+
+## Ceník
+
+Ceny ubytování za osobu a noc:
+
+| Období | Dospělá osoba | Děti 3–12 let |
+| --- | --- | --- |
+| Zima (1. 10. – 30. 4.) | 530 Kč / noc | 370 Kč / noc |
+| Léto (1. 5. – 30. 9.) | 480 Kč / noc | 370 Kč / noc |
+
+- Děti do 3 let: zdarma.
+- Vánoce a Silvestr: cena na vyžádání.
+
+Povinné poplatky:
+
+| Položka | Cena |
+| --- | --- |
+| Spotřeba energií (květen – září) | 600 Kč / chata / noc |
+| Spotřeba energií (říjen – duben) | 1000 Kč / chata / noc |
+| Povlečení a ručníky | 80 Kč / osoba / noc |
+| Závěrečný úklid | 1200 Kč / pobyt |
+| Městský poplatek z pobytu | 30 Kč / osoba / noc |
+
+Volitelné služby:
+
+| Služba | Cena |
+| --- | --- |
+| Sauna | 2500 Kč / pobyt |
+| Společenská místnost | 3000 Kč / pobyt |
+| Mazlíčci (domácí zvířata) | 500 Kč / noc |
+| Dětská postýlka (včetně peřinek) | 200 Kč / pobyt |
+
+Ceny jsou uvedeny v korunách českých včetně DPH. Aktuální ceník je vždy na
+stránce [Ceník](https://alexandra-abertamy.cz/#price-list).
+
+## Rezervace
+
+- Rezervace se zadává přes formulář na <https://alexandra-abertamy.cz/#contact>, e‑mailem nebo telefonicky.
+- Rezervace je závazná až po písemném potvrzení ze strany provozovatele.
+- Záloha, časy nástupu a ukončení pobytu i podmínky zrušení se sjednávají individuálně při potvrzení rezervace.
+- Domácí zvířata jsou možná po předchozí dohodě za poplatek dle ceníku.
+
+## Okolí a tipy na výlety
+
+- Cyklovýlety a naučné stezky Krušnohoří
+- Muzeum hornictví a minerálů v Krušnohoří
+- Historický důl Mauritius
+- Muzeum Abertamy — historie a řemesla
+
+## Optional
+
+- [Ochrana soukromí na tomto webu](https://alexandra-abertamy.cz/cookies.html): web neprovozuje analytiku, neměří návštěvnost ani neprofiluje uživatele; ukládá pouze jednu technickou položku do sessionStorage prohlížeče.

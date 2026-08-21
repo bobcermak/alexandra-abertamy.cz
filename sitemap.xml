@@ -2,12 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://alexandra-abertamy.cz/</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://alexandra-abertamy.cz/privacy-policy.html</loc>
+    <loc>https://alexandra-abertamy.cz/terms-and-conditions.html</loc>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://alexandra-abertamy.cz/privacy-policy.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://alexandra-abertamy.cz/cookies.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
