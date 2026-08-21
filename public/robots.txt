@@ -1,3 +1,12 @@
+# robots.txt - https://alexandra-abertamy.cz/
+# Chata Alexandra, Hrebecna (Abertamy) - ubytovani v Krusnych horach.
+#
+# Veskery obsah tohoto webu je verejny. Indexovani vyhledavaci i AI roboty
+# je vitane, vcetne pouziti obsahu pro odpovedi s uvedenim zdroje.
+# Strukturovany prehled pro jazykove modely a agenty:
+#   https://alexandra-abertamy.cz/llms.txt
+
 User-agent: *
 Allow: /
+
 Sitemap: https://alexandra-abertamy.cz/sitemap.xml

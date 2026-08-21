@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener('DOMContentLoaded', function() {
     let slides = document.querySelectorAll('.travel-tips-wrapper__trip-content');
     let dots = document.querySelectorAll('.travel-tips-wrapper__content-slider-dot');
+    if (!slides.length) return;
     let currentIndex = 0;
     let autoSlide = true;
     const delay = 12000;
